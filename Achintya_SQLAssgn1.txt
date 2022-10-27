@@ -1,0 +1,125 @@
+1.
+Create TABLE Customers
+(
+	Customerid char(5) NOT NULL,
+	Companyname varchar(40) NOT NULL,
+	contactName char(30) NULL,
+    Address varchar(60) NULL,
+	City char(15) NULL,
+	Phone char(24) null,
+	Fax char(24) NULL,
+);
+
+Create TABLE Orders
+(
+	OrderId int NOT NULL,
+	Customerid char(5) NOT NULL,
+	OrderDate datetime NULL,
+	ShippedDate datetime NULL,
+	Freight money NULL,
+	ShipName varchar(40)  NULL,
+	
+    ShipDate varchar(60) NULL,
+	Quantity int NULL
+);
+
+2.
+ALTER TABLE [SQLAssignment].[dbo].[Orders]
+ADD shipregion int NULL
+
+3.
+ALTER TABLE [SQLAssignment].[dbo].[Orders]
+ALTER COLUMN shipregion char(8) NULL
+
+4.
+ALTER TABLE [SQLAssignment].[dbo].[Orders]
+DROP COLUMN shipregion 
+
+5.
+INSERT INTO [SQLAssignment].[dbo].[Orders]
+VALUES ( 10, 'ord01', getdate(), getdate(), 100.0, 'Windstar', 'Ocean' ,1);
+
+6.
+EXEC SP_RENAME '[SQLAssignment].[dbo].[Customers].[City]', '[Town]', 'COLUMN'
+
+8.
+CREATE TABLE Department
+(
+	DeptID char(3) NOT NULL,
+	Dept char(10) NOT NULL,
+	location char(50) 
+);
+
+CREATE TABLE Employee
+(
+	emp int  NOT NULL,
+	emp_fna char(30) ,
+	emp_lna char(50) ,
+	dept char(3)
+);
+
+CREATE TABLE Project
+(
+	Budget int  NOT NULL,
+	project_name char(50) ,
+	project_no char(3)
+);
+
+CREATE TABLE Works_on
+(
+	emp_no int NOT NULL,
+	project_no char(3) NOT NULL,
+	Job char(10),
+	enter_date datetime ,
+);
+
+Part1.
+SELECT * FROM [SQLAssignment].[dbo].[Works_on]
+
+Part2.
+SELECT emp_no FROM [SQLAssignment].[dbo].[Works_on]
+WHERE Job = 'Clerk';
+
+Part3.
+SELECT emp_no FROM [SQLAssignment].[dbo].[Works_on]
+WHERE project_no='p2' AND emp_no < 1000;
+
+Part4.
+SELECT emp_no FROM [SQLAssignment].[dbo].[Works_on]
+WHERE project_no='p1' AND (Job = 'Analyst' OR 'Manager');
+
+Part6.
+SELECT enter_date FROM [SQLAssignment].[dbo].[Works_on]
+WHERE project_no='p2' AND Job = NULL;
+
+Part7.
+SELECT emp_fna, emp_lna FROM [SQLAssignment].[dbo].[Employee]
+WHERE emp_fna LIKE '%t%t%';
+
+Part8.
+SELECT emp_fna, emp FROM [SQLAssignment].[dbo].[Employee]
+WHERE (emp_lna LIKE '_o%' OR emp_lna LIKE '_a%') AND emp_lna LIKE '%es';
+
+Part 9.
+SELECT Employee.emp FROM [SQLAssignment].[dbo].[Employee],[SQLAssignment].[dbo].[Department]
+WHERE Depatrment.DeptID='d2' AND Employee.dept = Department.DeptID;
+
+Part 10.
+SELECT Employee.emp_fna, Employee.emp_lna, Works_on.enter_date FROM [SQLAssignment].[dbo].[Employee],[SQLAssignment].[dbo].[Works_on]
+WHERE Employee.emp = Works_on.emp_no AND enter_date = 04.01.1998;
+
+Part 11.
+SELECT Dept from [SQLAssignment].[dbo].[Department]
+GROUP BY location;
+
+Part 12.
+SELECT MAX(emp_no) AS MaximumEmpNumber from [SQLAssignment].[dbo].[Works_on];
+
+Part13.
+SELECT Job, Count(Job) FROM [SQLAssignment].[dbo].[Works_on]
+WHERE Count(Job)>2
+GROUP BY Job;
+
+Part14.
+SELECT Works_on.emp_no, Employee.dept, Works_on.Job FROM [SQLAssignment].[dbo].[Works_on], [SQLAssignment].[dbo].[Employee]
+WHERE Employee.emp=Works_on.emp_no AND (Employee.dept = 'd2' OR Works_on.Job='Clerk');
