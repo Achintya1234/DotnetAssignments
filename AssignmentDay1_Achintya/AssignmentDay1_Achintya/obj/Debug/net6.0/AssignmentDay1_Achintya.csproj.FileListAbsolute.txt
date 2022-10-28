@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\bin\Debug\net6.0\AssignmentDay1_Achintya.exe
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\bin\Debug\net6.0\AssignmentDay1_Achintya.deps.json
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\bin\Debug\net6.0\AssignmentDay1_Achintya.runtimeconfig.json
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\bin\Debug\net6.0\AssignmentDay1_Achintya.dll
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\bin\Debug\net6.0\AssignmentDay1_Achintya.pdb
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.dll
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\refint\AssignmentDay1_Achintya.dll
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.pdb
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\AssignmentDay1_Achintya.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\AssignmentDay1_Achintya\AssignmentDay1_Achintya\obj\Debug\net6.0\ref\AssignmentDay1_Achintya.dll
