@@ -1,0 +1,56 @@
+1.
+a.
+SELECT * FROM [SQLAssignments].[dbo].[Project]
+JOIN [SQLAssignments].[dbo].[Works_on]
+ON Project.project_no = Works_on.project_no;
+b.
+SELECT * FROM [SQLAssignments].[dbo].[Project]
+NATURAL JOIN [SQLAssignments].[dbo].[Works_on];
+c.
+SELECT [SQLAssignments].[dbo].[Project].*, [SQLAssignments].[dbo].[Works_on].*
+FROM [SQLAssignments].[dbo].[Project],[SQLAssignments].[dbo].[Works_on];
+
+2.
+SELECT Works_on.emp_no,Works_on.Job FROM [SQLAssignments].[dbo].[Project]
+JOIN [SQLAssignments].[dbo].[Works_on]
+ON Project.project_no = Works_on.project_no
+WHERE project_no='p2';
+
+3.
+SELECT Employee.emp_fna,Employee.emp_lna FROM [SQLAssignments].[dbo].[Department]
+JOIN [SQLAssignments].[dbo].[Employee]
+ON Employee.dept = Department.DeptID
+WHERE dept='d2' OR dept='d1';
+
+4.
+SELECT Works_on.emp_no,Works_on.enter_date, Employee.dept FROM [SQLAssignments].[dbo].[Employee]
+JOIN [SQLAssignments].[dbo].[Works_on]
+ON Employee.emp = Works_on.emp_no
+WHERE dept='d2';
+
+5.
+SELECT Project.project_name,Count(Works_on.Job) FROM [SQLAssignments].[dbo].[Project]
+JOIN [SQLAssignments].[dbo].[Works_on]
+ON Project.project_no = Works_on.project_no
+WHERE Works_on.Job = 'Clerk' AND Count(Job)>2;
+
+6.
+SELECT Works_on.emp_no,Employee.emp_fna,Employee.emp_lna, Works_on.Job FROM [SQLAssignments].[dbo].[Employee]
+JOIN [SQLAssignments].[dbo].[Works_on]
+ON Employee.emp = Works_on.emp_no
+WHERE project_no='p2' AND Job='Manager';
+
+7.
+INSERT INTO [SQLAssignments].[dbo].[Employee]
+VALUES(
+1111,'Julia','Long',NULL
+);
+
+8.
+UPDATE [SQLAssignments].[dbo].[Works_on] SET Job = 'Clerk'
+WHERE Job = 'Manager';
+
+9.
+UPDATE [SQLAssignments].[dbo].[Project] SET Budget = NULL;
+
+10.
