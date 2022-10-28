@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "FlyzMHZ/xPe4R5t8jFESSZ5oOhNs4M1H2Ey0SM9QX6QNiJbj3otUDdKx3JEZMpbeSrtNYwztc7YwCMnUXqZ/UA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\Achintya_Testing\\UnitTest_Xunit\\UnitTest_Xunit.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NET.Test.Sdk with version (>= 17.1.0)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 16.11.0 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package coverlet.collector with version (>= 3.1.2)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 3.0.3 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "coverlet.collector",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package xunit. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "xunit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package xunit.runner.visualstudio. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
